@@ -22,6 +22,7 @@ jobs:
         run: npm run demo:dot
 
       - name: Semantic Release 🚀
+        if: github.ref == 'refs/heads/master'
         # https://github.com/cycjimmy/semantic-release-action
         uses: cycjimmy/semantic-release-action@v5
         env:
